@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Major Mono Display';
+    src: url('../assets/fonts/MajorMonoDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url('../assets/fonts/Poppins-ExtraBold.ttf');
+}
+
+@theme {
+    --color-primary: #222831;
+    --color-secondary: #393e46;
+    --color-tertiary: #00ADB5;
+    --color-quaternary: #EEEEEE;
+
+    --color-tertiary-dark: #00858A;
+    --color-primary-dark: #15191f;
+
+    --font-mono: 'Major Mono Display', monospace;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-poppins-extrabold: 'Poppins-ExtraBold', sans-serif;
+}
+
+@layer base {
+    * {
+        @apply font-poppins selection:bg-tertiary;
+    }
+
+    h1, h2, h3, h4, h5, h6, button {
+        @apply font-poppins-extrabold;
+    }
+
+    h1 {
+        @apply text-5xl;
+    }
+
+    h2 {
+        @apply text-4xl;
+    }
+
+    h3 {
+        @apply text-3xl;
+    }
+
+    h4 {
+        @apply text-2xl;
+    }
+
+    h5 {
+        @apply text-xl;
+    }
+
+    button {
+        @apply cursor-pointer;
+    }
+}
+
+@layer components {
+    .border-line-1 {
+        @apply h-1 bg-tertiary w-2xl;
+    }
+    .border-line-2 {
+        @apply h-1 bg-tertiary w-xl;
+    }
+    .border-line-3 {
+        @apply h-1 bg-tertiary w-md;
+    }
+    .border-line-4 {
+        @apply h-1 bg-tertiary w-sm;
+    }
+
+    /** buttons */
+    .btn-tertiary {
+        @apply bg-tertiary hover:bg-tertiary-dark py-2 px-3 rounded-md text-white;
+    }
+
+    .btn-primary {
+        @apply bg-primary hover:bg-primary-dark py-2 px-3 rounded-md text-white;
+    }
+}
