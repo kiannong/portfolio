@@ -1,4 +1,5 @@
 import TertiaryButton from "./TertiaryButton.jsx";
+import {Link} from "react-router-dom";
 
 const ProjectCard = ({image, projectName, projectUrl, desc}) => {
     return (
@@ -8,11 +9,11 @@ const ProjectCard = ({image, projectName, projectUrl, desc}) => {
             <h5 className='text-white mt-5'>{projectName}</h5>
             <p className='text-white mt-3'>{desc}</p>
 
-            <a href={`/projects?project=${projectUrl}`}>
+            <Link to={`/projects?project=${projectUrl}`}>
                 <TertiaryButton className='mt-15 px-7'>
                     See more
                 </TertiaryButton>
-            </a>
+            </Link>
 
         </div>
     );
