@@ -18,13 +18,16 @@ const footer = () => {
                     <img src={myIcon} className='size-15 mx-auto' alt="Kiann"/>
                 </div>
                 <div className="flex">
-                    <TertiaryButton className='ms-auto py-2 px-3'>
-                        <img src={linkedin} className='size-6' alt="LinkedIn Account"/>
-                    </TertiaryButton>
-
-                    <TertiaryButton className='ms-2 me-auto'>
-                        <img src={github} className='size-6' alt="Github Account"/>
-                    </TertiaryButton>
+                    <a target='_blank' href="https://www.linkedin.com/in/kimberly-ong-8ba182335" className='ms-auto'>
+                        <TertiaryButton className={'py-2 px-3'}>
+                            <img src={linkedin} className='size-6' alt="LinkedIn Account"/>
+                        </TertiaryButton>
+                    </a>
+                    <a target='_blank' href="https://github.com/kiannong" className='ms-2 me-auto'>
+                        <TertiaryButton>
+                            <img src={github} className='size-6' alt="Github Account"/>
+                        </TertiaryButton>
+                    </a>
                 </div>
                 <h6 className='text-center text-white mt-3'>kiannong.dev@gmail.com</h6>
                 <p className={'text-center text-white text-xs mt-1'}>Last Updated: June 2025</p>
