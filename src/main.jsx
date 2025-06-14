@@ -3,9 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './css/index.css'
 import App from './pages/App.jsx'
 import Projects from "./pages/Projects.jsx";
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createHashRouter, RouterProvider} from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     { path: '/', element: <App /> },
     { path: '/projects', element: <Projects /> },
 ]);
